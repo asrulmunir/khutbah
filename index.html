@@ -3,177 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khutbah Jumaat: Kebahagiaan Abadi</title>
+    <title>Kebahagiaan Abadi</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            height: 100%;
-            overflow: hidden;
-        }
-        .slide {
-            height: 100%;
-            width: 100%;
-            display: none;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
-            box-sizing: border-box;
-            background-color: #f0f0f0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-        .slide.active {
-            display: block;
+            background-color: #f4f4f4;
         }
         h1, h2 {
-            color: #333;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
         }
-        .controls {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
+        .highlight {
+            background-color: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px 0;
         }
-        button {
-            font-size: 18px;
-            padding: 10px 20px;
-            margin: 0 5px;
+        .quote {
+            font-style: italic;
+            color: #34495e;
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
         }
-        .fade-in {
-            animation: fadeIn 1s;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-    <div id="presentation">
-        <div class="slide active">
-            <h1>Khutbah Jumaat: Kebahagiaan Abadi</h1>
-            <p>28 Jun 2024M | 21 Zulhijjah 1445H</p>
-        </div>
-        <div class="slide">
-            <h2>Definisi Kebahagiaan</h2>
-            <blockquote id="quote1" style="opacity: 0;">
-                "Menurut Imam al-Ghazali, bahagia adalah ketika manusia berada di puncak ketakwaan dan ianya merupakan sebesar-besar nikmat yang dianugerahkan oleh Allah SWT."
-            </blockquote>
-        </div>
-        <div class="slide">
-            <h2>Konsep Kebahagiaan dalam Islam</h2>
-            <ul id="list1"></ul>
-        </div>
-        <div class="slide">
-            <h2>Kebahagiaan Dunia vs Akhirat</h2>
-            <div id="comparison"></div>
-        </div>
-        <div class="slide">
-            <h2>Firman Allah SWT</h2>
-            <blockquote id="quote2" style="opacity: 0;">
-                "Dan carilah pada apa yang telah dianugerahkan Allah kepadamu (kebahagiaan) negeri akhirat, dan janganlah kamu melupakan bahagianmu dari (kenikmatan) duniawi."
-            </blockquote>
-            <p>(Surah Al-Qasas: 77)</p>
-        </div>
-        <div class="slide">
-            <h2>Pengajaran Utama</h2>
-            <ol id="list2"></ol>
-        </div>
-        <div class="slide">
-            <h2>Kesimpulan</h2>
-            <p id="conclusion" style="opacity: 0;">Kebahagiaan abadi hanya dapat dicapai melalui keimanan, ketakwaan, dan keseimbangan antara kehidupan dunia dan akhirat.</p>
-        </div>
-    </div>
-    <div class="controls">
-        <button onclick="prevSlide()">Previous</button>
-        <button onclick="nextSlide()">Next</button>
+    <h1>Kebahagiaan Abadi</h1>
+    
+    <div class="section">
+        <h2>Apakah Kebahagiaan?</h2>
+        <p>Kebahagiaan adalah perasaan gembira, damai, dan tenang yang subjektif. Ia bukan hanya untuk orang kaya, tetapi boleh diraih oleh semua, termasuk golongan fakir dan miskin.</p>
+        <p class="highlight">Menurut Imam al-Ghazali, bahagia adalah ketika manusia berada di puncak ketakwaan.</p>
     </div>
 
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
+    <div class="section">
+        <h2>Kebahagiaan dalam Islam</h2>
+        <p>Islam mementingkan kebahagiaan di dunia dan akhirat. Kebahagiaan dalam Islam meliputi:</p>
+        <ul>
+            <li>Ketaqwaan kepada Allah SWT</li>
+            <li>Melakukan kebaikan kepada orang lain</li>
+            <li>Syukur dan reda dengan ujian</li>
+            <li>Menjaga hubungan dengan Allah SWT</li>
+            <li>Mencari keseimbangan hidup di dunia dan akhirat</li>
+        </ul>
+    </div>
 
-        function showSlide(n) {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (n + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
-            animateContent();
-        }
+    <div class="section">
+        <h2>Cara Mencapai Kebahagiaan Abadi</h2>
+        <ol>
+            <li>Bertaubat dan berazam meninggalkan dosa</li>
+            <li>Mempelajari dan memahami ajaran Islam</li>
+            <li>Mengenali Allah SWT dan sifat-sifat-Nya</li>
+            <li>Melakukan amalan soleh</li>
+            <li>Bersyukur atas nikmat Allah SWT</li>
+        </ol>
+        <p class="quote">"Jadilah hidup engkau di dunia seperti orang asing atau musafir" - Hadis Riwayat Imam al-Bukhari</p>
+    </div>
 
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
-
-        function prevSlide() {
-            showSlide(currentSlide - 1);
-        }
-
-        function animateContent() {
-            if (currentSlide === 1) {
-                setTimeout(() => {
-                    document.getElementById('quote1').style.opacity = 1;
-                    document.getElementById('quote1').classList.add('fade-in');
-                }, 500);
-            } else if (currentSlide === 2) {
-                const list = document.getElementById('list1');
-                const items = ['Ketakwaan kepada Allah SWT', 'Melakukan kebaikan kepada orang lain', 'Syukur dan reda dengan ujian', 'Menjaga hubungan dengan Allah SWT', 'Mencari keseimbangan hidup di dunia dan di akhirat'];
-                list.innerHTML = '';
-                items.forEach((item, index) => {
-                    setTimeout(() => {
-                        const li = document.createElement('li');
-                        li.textContent = item;
-                        li.classList.add('fade-in');
-                        list.appendChild(li);
-                    }, index * 500);
-                });
-            } else if (currentSlide === 3) {
-                const comparison = document.getElementById('comparison');
-                comparison.innerHTML = '';
-                ['Dunia: Bersifat sementara dan merupakan ujian', 'Akhirat: Kekal abadi dan merupakan tujuan utama'].forEach((text, index) => {
-                    setTimeout(() => {
-                        const p = document.createElement('p');
-                        p.textContent = text;
-                        p.classList.add('fade-in');
-                        comparison.appendChild(p);
-                    }, index * 1000);
-                });
-            } else if (currentSlide === 4) {
-                setTimeout(() => {
-                    document.getElementById('quote2').style.opacity = 1;
-                    document.getElementById('quote2').classList.add('fade-in');
-                }, 500);
-            } else if (currentSlide === 5) {
-                const list = document.getElementById('list2');
-                const items = [
-                    'Beriman, beramal soleh, dan berakhlak mulia adalah tuntutan untuk kebahagiaan yang kekal abadi.',
-                    'Kebahagiaan dan ketenangan datang apabila hati dan akal tunduk pada ketetapan ilahi.',
-                    'Memahami tujuan kehidupan yang hakiki membawa ketenangan, keredaan, dan syukur.'
-                ];
-                list.innerHTML = '';
-                items.forEach((item, index) => {
-                    setTimeout(() => {
-                        const li = document.createElement('li');
-                        li.textContent = item;
-                        li.classList.add('fade-in');
-                        list.appendChild(li);
-                    }, index * 1000);
-                });
-            } else if (currentSlide === 6) {
-                setTimeout(() => {
-                    document.getElementById('conclusion').style.opacity = 1;
-                    document.getElementById('conclusion').classList.add('fade-in');
-                }, 500);
-            }
-        }
-
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'ArrowRight') {
-                nextSlide();
-            } else if (e.key === 'ArrowLeft') {
-                prevSlide();
-            }
-        });
-    </script>
+    <div class="section">
+        <h2>Penutup</h2>
+        <p>Kebahagiaan abadi dapat dicapai dengan:</p>
+        <ul>
+            <li>Beriman dan beramal soleh</li>
+            <li>Berakhlak mulia</li>
+            <li>Tunduk pada ketetapan ilahi</li>
+            <li>Memahami tujuan kehidupan yang hakiki</li>
+        </ul>
+        <p class="highlight">Ingatlah: Dunia adalah sementara, akhirat adalah kekal abadi.</p>
+    </div>
 </body>
 </html>
